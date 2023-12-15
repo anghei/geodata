@@ -13,7 +13,7 @@ records = []
 
 msk_centroid = [55.751244, 37.618423]
 
-with open('data/msk.json', encoding='utf-8') as tt:
+with open('data/tt_msk.csv', encoding='utf-8') as tt:
     reader = csv.DictReader(tt)
     for row in reader:
         records.append({key: row[key] for key in keys})
