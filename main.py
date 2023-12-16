@@ -52,7 +52,7 @@ if action == 'Выбрать ТТ из списка':
         popup=option).add_to(exact)
 
     st.write('Вы выбрали: ', option)
-    st.title('Распределение ТТ, Москва')
+    st.title(f'Расположение {option}')
     st_folium(exact, width=700)
 
 elif action == 'Отобразить все ТТ на карте':
